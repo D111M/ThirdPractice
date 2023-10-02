@@ -1,0 +1,8 @@
+FROM openjdk:17
+LABEL version="1.0.1"
+WORKDIR /test/game-java/java
+COPY . /test/game-java/java/
+CMD [ "java" , "calc.java"]
+
+#docker build -t java-game-build .
+#docker run -t java-game-builds

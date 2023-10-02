@@ -1,0 +1,6 @@
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+EXPOSE 80
+
+#docker build -t site-practice-build .
+#docker run -d -p 8080:80 site-practice-build
